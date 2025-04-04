@@ -3,101 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Carz</title>
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
     <header>
-        <div class=".logo">
-            Carz
+        <div class="nav">
+            <div class="logo">
+                Carz
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="./index.html" class="menu-item">Автомобілі</a></li>
+                    <li><a href="#footer" class="menu-item">Контакти</a></li>
+                </ul>
+                
+            </nav>
+
+            <div class="shop-img">
+                <a href="./cart.html"><img src="./img/shop.png"></a>
+                <div class="cart-count">0</div>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li> <a href="#">Автомобілі</a></li>
-                <li><a href="#">Контакти</a></li>
-            </ul>
-            
-        </nav>
-        <div>
+        <div class="hero">
             <h1>Розкішні автомобілі,</h1>
             <h1>за доступною ціною</h1>
         </div>
     </header>
 <main>
-    <div>
-        <img src="./img/1.png">
-        <div>
+    <div class="row">
+    <div class="product" data-name="Audi RS6" data-price="14500" data-image="./img/1.png">
+        <img src="./img/1.png" class="prod-img">
+        <div class="prod-text">
             <div>
-                <p>Audi RS6 $14500</p>
-                <p>Універсал 2018</p>
+                <p class="product-title">Audi RS6 <span class="price">$14500</span></p>
+                <p class="subtitle">Універсал 2018</p>
             </div>
-            <img src="./img/shop1.png">
+            <button class="add-to-cart"><img src="./img/shop1.png"></button>
         </div>
     </div>
+    
 
-    <div>
-        <img src="./img/2.png">
-        <div>
+    <div class="product" data-name="Audi RS7" data-price="88000" data-image="./img/2.png">
+        <img src="./img/2.png" class="prod-img">
+        <div class="prod-text">
             <div>
-                <p>Audi RS7 $88000</p>
-                <p>Купе 2012</p>
+                <p class="product-title">Audi RS7 <span class="price">$88000</span></p>
+                <p class="subtitle">Купе 2012</p>
             </div>
-            <img src="./img/shop1.png">
+            <button class="add-to-cart"><img src="./img/shop1.png"></button>
         </div>
     </div> 
+    </div>
     
-    <div>
-        <img src="./img/3.png">
-        <div>
+    <div class="row">
+    <div class="product" data-name="Porsche 911 GT3" data-price="200000" data-image="./img/3.png">
+        <img src="./img/3.png" class="prod-img">
+        <div class="prod-text">
             <div>
-                <p>Porsche 911 GT3 $200000</p>
-                <p>Купе 2019</p>
+                <p class="product-title">Porsche 911 GT3 <span class="price">$200000</span></p>
+                <p class="subtitle">Купе 2019</p>
             </div>
-            <img src="./img/shop1.png">
+            <button class="add-to-cart"><img src="./img/shop1.png"></button>
         </div>
     </div>
     
-    <div>
-        <img src="./img/4.png">
-        <div>
+    <div class="product" data-name="Audi A4" data-price="36000" data-image="./img/4.png">
+        <img src="./img/4.png" class="prod-img">
+        <div class="prod-text">
             <div>
-                <p>Audi A4 $36000</p>
-                <p>Седан 2018</p>
+                <p class="product-title">Audi A4 <span class="price">$36000</span></p>
+                <p class="subtitle">Седан 2018</p>
             </div>
-            <img src="./img/shop1.png">
+            <button class="add-to-cart"><img src="./img/shop1.png"></button>
         </div>
     </div> 
+    </div>
     
-    <div>
-        <img src="./img/5.png">
-        <div>
+    <div class="row">
+    <div class="product" data-name="Toyota C-HR" data-price="34000" data-image="./img/5.png">
+        <img src="./img/5.png" class="prod-img">
+        <div class="prod-text">
             <div>
-                <p>Toyota C-HR $34000</p>
-                <p>Хетчбек 2014</p>
+                <p class="product-title">Toyota C-HR <span class="price">$34000</span></p>
+                <p class="subtitle">Хетчбек 2014</p>
             </div>
-            <img src="./img/shop1.png">
+            <button class="add-to-cart"><img src="./img/shop1.png"></button>
         </div>
     </div>    
 
-    <div>
-        <img src="./img/6.png">
-        <div>
+    <div class="product" data-name="BMW 1 Series" data-price="31000" data-image="./img/6.png">
+        <img src="./img/6.png" class="prod-img">
+        <div class="prod-text">
             <div>
-                <p>BMW 1 Series $31000</p>
-                <p>Хетчбек 2017</p>
+                <p class="product-title">BMW 1 Series <span class="price">$31000</span></p>
+                <p class="subtitle">Хетчбек 2017</p>
             </div>
-            <img src="./img/shop1.png">
+            <button class="add-to-cart"><img src="./img/shop1.png"></button>
         </div>
+    </div>
     </div>    
 </main>
 
-<footer>
-<img src="./img/chelovek.png">
-<p>Дмитро</p>
-<a href="tel:+380982817576">+38 (098) 281 75 76</a>
-<a href="mailto:d6510290@gmail.com">d6510290@gmail.com</a>
+<footer id="footer">
+<img src="./img/chelovek.png" class="footer-img">
+<p class="footer-name">Дмитро</p>
+<a href="tel:+380982817576" class="footer-contact">+38 (098) 281 75 76</a>
+<a href="mailto:d6510290@gmail.com" class="footer-contact">d6510290@gmail.com</a>
+<div class="copy">
 <img src="./img/copyraite.png">
-<p>carz</p>
+<p class="footer-logo">carz</p>
+</div>
 </footer>
+
+<script src="./script.js"></script>
 
 </body>
 </html>
